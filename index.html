@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Web Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+
+    <!-- Profile -->
+    <div class="sidebar-header">
+      <img id="myPic" src="" class="avatar">
+      <div class="icons">
+        <span>🟢</span>
+        <span>📞</span>
+        <span onclick="openProfile()">⚙️</span>
+        <button onclick="toggleDark()">🌙</button>
+
+      </div>
+    </div>
+
+    <!-- Search -->
+    <input type="text" placeholder="Search chats..." class="search">
+
+    <!-- Chat List -->
+    <div id="chatList"></div>
+  </div>
+
+  <!-- Chat Area -->
+  <div class="chat">
+
+    <div class="chat-header" id="chatHeader">
+      Select a chat
+    </div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="input-box">
+      <input type="text" id="messageInput" placeholder="Type a message">
+      <button onclick="sendMessage()">➤</button>
+      <button onclick="startVoice()">🎤</button>
+<button onclick="openCamera()">📷</button>
+
+<div id="cameraBox" style="display:none;">
+  <video id="video" autoplay></video>
+  <button onclick="capturePhoto()">📸 Capture</button>
+  <button onclick="closeCamera()">❌ Close</button>
+</div>
+
+<canvas id="canvas" style="display:none;"></canvas>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Profile Panel -->
+<div class="profile-panel" id="profilePanel">
+  <h3>My Profile</h3>
+
+  <img id="profilePic" class="avatar large"><br>
+
+  <input type="file" onchange="uploadPic(event)"><br><br>
+
+  <div id="viewProfile">
+    <p>Name: <span id="myName"></span></p>
+    <p>About: <span id="myAbout"></span></p>
+    <button onclick="editProfile()">Edit</button>
+  </div>
+
+  <div id="editProfileBox" style="display:none;">
+    <input id="newName" placeholder="Name"><br><br>
+    <input id="newAbout" placeholder="About"><br><br>
+    <button onclick="saveProfile()">Save</button>
+  </div>
+
+  <button onclick="closeProfile()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
