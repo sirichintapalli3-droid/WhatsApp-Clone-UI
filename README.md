@@ -1,0 +1,24 @@
+# WhatsApp UI Clone 💬
+
+A responsive WhatsApp UI Clone built using HTML, CSS, and JavaScript.
+
+## 🚀 Features
+- Responsive Design
+- Chat Interface
+- Sidebar Navigation
+- Modern UI
+- Mobile Friendly
+
+## 🛠 Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## 🎯 Project Goal
+This project was created to improve frontend development skills and understand modern UI design concepts.
+
+## 👩‍💻 Author
+Siri Chintapalli
+
+## 🔗 GitHub
+https://github.com/sirichintapalli3-droid
